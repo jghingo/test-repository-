@@ -11,7 +11,7 @@ under one minute or over 24 hours), then compared using grouped
 summaries and a regression on log trip duration, with an interaction
 between rider type and bike type. This lets the differences between the
 four different rider and bike combinations be reflected as percentage
-differences in typical trip length. \## Data
+differences in typical trip length. 
 
 ``` python
 import pandas as pd 
