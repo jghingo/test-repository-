@@ -73,6 +73,7 @@ bikes["date"] = bikes["started_at"].dt.normalize()
 bikes[["started_at", "duration_min", "hour", "day_of_week", "is_weekend", "month", "date"]].head()
 
 print(bikes.groupby("is_weekend")["duration_min"].mean())
+
 print(bikes.groupby("day_of_week")["duration_min"].mean())
 
 print(bikes["day_of_week"].value_counts())
