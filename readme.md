@@ -50,6 +50,7 @@ for month_df in months:
 
 ``` python
 bikes["started_at"] = pd.to_datetime(bikes["started_at"])
+
 bikes["ended_at"] = pd.to_datetime(bikes["ended_at"])
 
 bikes["duration_min"] = (bikes["ended_at"] - bikes["started_at"]).dt.total_seconds() / 60
